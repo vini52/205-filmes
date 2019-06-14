@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    grid-template-areas:'nav nav nav nav' 
+                        'header header header header' 
+                        'section section section section' 
+                        'footer footer footer footer';
+    grid-template-rows: 20vh 50vh 80vh 50vh;
+    margin: 0;
+}
+nav{
+    background-color: red;
+    grid-area: nav;
+}
+header{
+    background-color: blue;
+    grid-area: header;
+}
+section{
+    background-color: green;
+    grid-area: section;
+}
+footer{
+    background-color: yellow;
+    grid-area: footer;
+}
