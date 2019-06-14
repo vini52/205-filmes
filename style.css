@@ -4,7 +4,7 @@ body{
                         'header header header header' 
                         'section section section section' 
                         'footer footer footer footer';
-    grid-template-rows: 20vh 80vh 100vh 50vh;
+    grid-template-rows: 20vh 80vh 100vh 20vh;
     grid-template-columns: 25vw 25vw 25vw 23.75vw;
     margin: 0;
 }
@@ -68,10 +68,26 @@ header div section aside img{
     height: 24px;
 }
 section{
-    background-color: green;
+    background-color: black;
+    display: flex;
+    justify-content: center;
     grid-area: section;
 }
+section header{
+    background: none;
+    background-color: aquamarine;
+    height: 100%;
+    width: 95%;
+}
 footer{
-    background-color: yellow;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: footer;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
 }
