@@ -4,9 +4,10 @@ body{
                         'header header header header' 
                         'section section section section' 
                         'footer footer footer footer';
-    grid-template-rows: 20vh 80vh 100vh 20vh;
-    grid-template-columns: 25vw 25vw 25vw 23.75vw;
+    grid-template-rows: 20vh 65vh 400vh 20vh;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
     margin: 0;
+    overflow-x: hidden;
 }
 nav{
     align-items: center;
@@ -50,6 +51,8 @@ header div section{
     align-items: center;
     background: none;
     display: flex;
+    justify-content: space-between;
+    width: 42%;
 }
 #classificacaoIdade{
     width: 16px;
@@ -75,9 +78,27 @@ section{
 }
 section header{
     background: none;
-    background-color: aquamarine;
+    background-color: lightgray;
+    display: grid;
+    grid-template-areas:'div div div div'
+                        'div div div div'
+                        'div div div div'
+                        'div div div div'
+                        'div div div div';
     height: 100%;
-    width: 95%;
+    width: 100%;
+}
+section header div{
+    align-items: center;
+    background: none;
+    background-color: black;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    width: 60%;
+}
+section header div img{
+    width: 90%;
 }
 footer{
     background-color: black;

@@ -1,5 +1,5 @@
 let inputPesquisa = document.querySelector("#inputPesquisar");
-let img = document.querySelector("header div img");
+
 let filmes = [
     {titulo: "doze é demais", diretor: "shawn levy", genero: "comedia" },
     {titulo: "a freira", diretor: "corin hardy", genero: "terror"},
@@ -24,9 +24,12 @@ let filmes = [
     {titulo: "karate kid", diretor: "harald zwart", genero: "acao"},
     {titulo: "eu sou a mae", diretor: "grant sputore", genero: "ficcao cientifica"},
 ]
-let caminho;
-// for(let i=1; i < 23; i++){
-    caminho = img.src = `img/1.jpg`
-    console.log(caminho);
-// }
-img.src = caminho;
+
+let i = 1;
+let img = [];
+let caminho = [];
+
+for(i; i < 23; i++){
+    img[i] = document.querySelector("#Img" + i);
+    caminho[i] = img[i].src = `img/${i}.jpg`;
+}
