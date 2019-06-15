@@ -71,6 +71,7 @@ header div section aside img{
     height: 24px;
 }
 section{
+    align-items: center;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -99,6 +100,25 @@ section header div{
 }
 section header div img{
     width: 90%;
+}
+section aside{
+    display: none;
+    width: 100%;
+}
+section aside p {
+    color: red;
+    font-family: 'Lato', sans-serif;
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+.resImgPesquisa{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 400px;
+}
+#imgRes{
+    width: 75%;
 }
 footer{
     background-color: black;
