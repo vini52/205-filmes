@@ -26,10 +26,16 @@ let filmes = [
 ]
 let img = [];
 let caminho = [];
+let verTitulo = [];
 for(let i = 1; i < 23; i++){
     img[i] = document.querySelector("#Img" + i);
     caminho[i] = img[i].src = `img/${i}.jpg`;
 }
+for(let j = 0; j < 22; j++){
+    let teste = document.querySelectorAll("section header div p");
+    teste[j].innerHTML = `${filmes[j].titulo}`;
+}
+
 function pesquisarFilme(){
     for(let filme of filmes){
         if(inputPesquisa.value == filme.titulo || inputPesquisa.value == filme.diretor || inputPesquisa.value == filme.genero){
