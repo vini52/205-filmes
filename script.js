@@ -40,7 +40,7 @@ function pesquisarFilme(){
     for(let filme of filmes){
         if(inputPesquisa.value == filme.titulo || inputPesquisa.value == filme.diretor || inputPesquisa.value == filme.genero){
             let heigthSection = document.querySelector("body");
-            heigthSection.style.gridTemplateRows = "20vh 65vh 100vh 20vh";
+            heigthSection.style.gridTemplateRows = "20vh 85vh 100vh 20vh";
             let backColorSection = document.querySelector("#sectionBackColor");
             backColorSection.style.backgroundColor = "lightgray";
             let ocultar = document.querySelector("section header");

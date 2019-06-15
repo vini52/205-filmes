@@ -27,6 +27,9 @@ nav div input{
 nav img{
     width: 200px;
 }
+#logoMobile{
+    display: none;
+}
 nav button{
     background-color: white;
     border: none;
@@ -161,4 +164,70 @@ footer div{
     display: flex;
     justify-content: space-between;
     width: 10%;
+}
+@media(max-width:1024px){
+    header div{
+        width: 55%;
+    }
+    section header div{
+        height: 75%;
+    }
+    section header div img {
+        height: 180px;
+        width: 90%;
+    }
+    .resImgPesquisa {
+        width: 30%;
+        height: 450px;
+    }
+    footer div{
+        width: 25%;
+    }
+}
+@media(max-width:768px){
+    header div{
+        width: 75%;
+    }
+}
+@media(max-width: 425px){
+    body{
+        grid-template-rows: 20vh 85vh 600vh 20vh;
+    }
+    #logoDesktop{
+        display: none;
+    }
+    #logoMobile{
+        display: block;
+        width: 100%;
+    }
+    nav a{
+        align-items: center;
+        display: flex;
+        height: 100%;
+        width: 25%;
+    }
+    header div{
+        width: 80%;
+    }
+    header div section{
+        width: 65%;
+    }
+    section header{
+        grid-template-areas:'div div'
+                            'div div'
+                            'div div'
+                            'div div'
+                            'div div';
+    }
+    section header div img {
+        height: 150px;
+        width: 90%;
+    }
+    .resImgPesquisa {
+        width: 60%;
+        height: 380px;
+    }
+    footer div {
+        width: 35%;
+    }
 }
